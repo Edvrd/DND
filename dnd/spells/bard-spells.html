@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bard Spell List – D&D 5e</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <header>
+      <div class="nav-bar">
+        <div class="brand">
+          <div class="brand-logo">D&D</div>
+          <div>
+            <div class="brand-title">Class & Spell Atlas</div>
+            <div class="brand-sub">Bard spells</div>
+          </div>
+        </div>
+        <button class="nav-toggle" onclick="toggleNav()">
+          <span>Menu</span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../classes/bard.html">Bard</a>
+          <a href="index.html">Spells</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-header">
+        <p class="breadcrumbs">
+          <a href="../index.html">Home</a> &raquo;
+          <a href="index.html">Spells</a> &raquo;
+          Bard
+        </p>
+        <h1 class="page-title">Bard Spell List</h1>
+        <p class="section-description">
+          Spells commonly available to bards. Grouped here by level.
+        </p>
+      </div>
+
+      <section class="subsection">
+        <h2>Cantrips (0-level)</h2>
+        <div class="spell-list">
+          <div class="spell-list-header">
+            <div>Name</div>
+            <div>School</div>
+            <div>Casting time</div>
+          </div>
+          <div class="spell-row">
+            <div>Vicious Mockery</div>
+            <div>Enchantment</div>
+            <div>1 action</div>
+          </div>
+          <div class="spell-row">
+            <div>Prestidigitation</div>
+            <div>Transmutation</div>
+            <div>1 action</div>
+          </div>
+          <div class="spell-row">
+            <div>Minor Illusion</div>
+            <div>Illusion</div>
+            <div>1 action</div>
+          </div>
+          <!-- Add more bard cantrips here -->
+        </div>
+      </section>
+
+      <section class="subsection">
+        <h2>1st-level spells</h2>
+        <div class="spell-list">
+          <div class="spell-list-header">
+            <div>Name</div>
+            <div>School</div>
+            <div>Casting time</div>
+          </div>
+          <div class="spell-row">
+            <div>Healing Word</div>
+            <div>Evocation</div>
+            <div>1 bonus action</div>
+          </div>
+          <div class="spell-row">
+            <div>Dissonant Whispers</div>
+            <div>Enchantment</div>
+            <div>1 action</div>
+          </div>
+          <div class="spell-row">
+            <div>Faerie Fire</div>
+            <div>Evocation</div>
+            <div>1 action</div>
+          </div>
+          <!-- Add more level 1 bard spells -->
+        </div>
+      </section>
+
+      <!-- Repeat subsections for spell levels 2–9 as needed -->
+
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        Bard spell list – add or extend spells as needed.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function toggleNav() {
+      const links = document.getElementById("nav-links");
+      links.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

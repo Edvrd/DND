@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Artificer – D&D Class</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <header>
+      <div class="nav-bar">
+        <div class="brand">
+          <div class="brand-logo">D&D</div>
+          <div>
+            <div class="brand-title">Class & Spell Atlas</div>
+            <div class="brand-sub">Artificer</div>
+          </div>
+        </div>
+        <button class="nav-toggle" onclick="toggleNav()">
+          <span>Menu</span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="artificer.html">Classes</a>
+          <a href="../spells/index.html">Spells</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-header">
+        <p class="breadcrumbs">
+          <a href="../index.html">Home</a> &raquo; Classes &raquo; Artificer
+        </p>
+        <h1 class="page-title">Artificer</h1>
+        <p class="section-description">
+          Artificers are magical inventors, infusing items with arcane power.
+        </p>
+      </div>
+
+      <section class="subsection">
+        <h2>Subclasses (Artificer Specializations)</h2>
+        <ul class="clean">
+          <li>Alchemist</li>
+          <li>Armorer</li>
+          <li>Artillerist</li>
+          <li>Battle Smith</li>
+        </ul>
+      </section>
+
+      <section class="subsection">
+        <h2>Spell list for Artificer</h2>
+        <p class="section-description">
+          See a dedicated spell list for this class, separated on its own page.
+        </p>
+        <a class="btn btn-primary" href="../spells/artificer-spells.html">
+          Open artificer spell list →
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        Fan-made D&D reference. Artificer class.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function toggleNav() {
+      const links = document.getElementById("nav-links");
+      links.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
