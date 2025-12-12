@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Armorer - D&D</title>
+</head>
+<body>
+    <!-- Menu Toggle Button -->
+    <button class="menu-toggle" onclick="toggleSidenav()">☰ Menu</button>
+
+    <!-- Side Navigation -->
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidenav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../artificer.html">Artificer</a>
+        <a href="#">Subclasses</a>
+        <a href="#">Spells</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <h1>Artificer: Armorer</h1>
+
+            <p><strong>An artificer who specializes as an Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the artificer's magic, unleash potent attacks, and generate a formidable defense. The artificer bonds with this armor, becoming one with it even as they experiment with it and refine its magical capabilities.</strong></p>
+
+            <p><strong>Source:</strong> Tasha's Cauldron of Everything /Tarasek's Balconate of Terror</p>
+
+            <h2>Tools of the Trade</h2>
+            <p>When you adopt this specialization at 3rd level, you gain proficiency with alchemist's supplies. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.</p>
+
+            <h2>Armorer Spells</h2>
+            <p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Armorer Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
+            <table>
+    <thead>
+        <tr>
+            <th>Artificer Level</th>
+            <th>Alchemist Spells</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3rd</td>
+            <td><a href="../../spells/all-spells/1st/magic-missile.html">Magic Missile</a>, <a href="../../spells/all-spells/1st/thunderwave.html">Thunderwave</a></td>
+        </tr>
+        <tr>
+            <td>5th</td>
+            <td><a href="../../spells/all-spells/2nd/mirror-image.html">Mirror Image</a>, <a href="../../spells/all-spells/2nd/shatter.html">Shatter</a></td>
+        </tr>
+        <tr>
+            <td>9th</td>
+            <td><a href="../../spells/all-spells/3rd/hypnotic-pattern.html">Hypnotic Pattern</a>, <a href="../../spells/all-spells/3rd/lightning-bolt.html">Lightning Bolt</a></td>
+        </tr>
+        <tr>
+            <td>13th</td>
+            <td><a href="../../spells/all-spells/4th/fire-shield.html">Fire Shield</a>, <a href="../../spells/all-spells/4th/greater-invisibility.html">Greater Invisibility</a></td>
+        </tr>
+        <tr>
+            <td>17th</td>
+            <td><a href="../../spells/all-spells/5th/passwall.html">Passwall</a>, <a href="../../spells/all-spells/5th/wall-of-force.html">Wall of Force</a></td>
+        </tr>
+    </tbody>
+</table>
+        <h2>Arcane Armor</h2>
+        <p>Beginning at 3rd level, your metallurgical pursuits have led to you making armor a conduit for your magic. As an action, you can turn a suit of armor you are wearing into Arcane Armor, provided you have smith's tools in hand.<br><br>
+You gain the following benefits while wearing this armor:</p>
+<ul>
+    <li>If the armor normally has a Strength requirement, the arcane armor lacks this requirement for you.</li>
+    <li>You can use the arcane armor as a spellcasting focus for your artificer spells.</li>
+    <li>The armor attaches to you and can't be removed against your will. It also expands to cover your entire body, although you can retract or deploy the helmet as a bonus action. The armor replaces any missing limbs, functioning identically to a body part it is replacing.</li>
+    <li>You can doff or don the armor as an action.</li>
+</ul>
+<p>The armor continues to be Arcane Armor until you don another suit of armor or you die.</p>
+<h2>Armor model</h2>
+<p>Beginning at 3rd level, you can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.<br><br>
+
+Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.<br><br>
+
+You can change the armor's model whenever you finish a short or long rest, provided you have smith's tools in hand.</p>
+        <table>
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Effects</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Guardian</td>
+            <td><ul>
+                <li><strong>Thunder Gauntlets.</strong> Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals 1d8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else.</li>
+                <li><strong>Defensive Field.</strong> As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+            </ul></td>
+        </tr>
+        <tr>
+            <td>Infiltrator</td>
+            <td><ul>
+                <li><strong>Lightning Launcher.</strong> A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.</li>
+                <li><strong>Powered Steps.</strong>Your walking speed increases by 5 feet.</li>
+                <li><strong>Dampening Field.</strong>You have advantage on Dexterity (Stealth) checks. If the armor normally imposes disadvantage on such checks, the advantage and disadvantage cancel each other, as normal.</li>
+            </ul></td>
+        </tr>
+        <tr>
+            <td>Diver </td>
+            <td><ul>
+                <li><strong>Industrial Claws.</strong>Your armour gains a pair of claws for deepsea work they count as martial weapons if your not holding anything in that arm they deal 1d8 slashing dmg and grapple anything you hit.</li>
+                <li><strong>Thrusters.</strong>You gain 10 ft of sweaming speed.</li>
+                <li><strong>Current Protection Systems.</strong>You cant be moved against your will or be knocked prone.</li>
+            </ul></td>
+        </tr>
+        <tr>
+            <td>Recon</td>
+            <td><ul>
+                <li><strong>Atmosferic Recon.</strong>You gain 30ft flying speed and  gain advantage at perception checks your passive perception is higher by 5</li>
+                <li><strong>Wind Blasts.</strong>You can Flap your wings or position your thrusters to create a air wave they count as Simple range weapons and deal 1d6 bludgeoning dmg on a succesfull hit targeted Creature makes a con save or gets pushed 10 ft</li>
+            </ul></td>
+       <tr>
+            <td>Demolisher</td>
+            <td><ul>
+                <li><strong>Demolisher Cannon.</strong>Your armour gains a metal tube that is a simple ranged weapon. The canon ignores cover and can shoot indirectly with disadvantage with a range of 600ft or directly with 120ft of range. The canon deals 1d8 force damage. It Has Loading property and doesnt consume any ammunition but you can load it with specialty ammunition like magic arrows or enchanted stones; Also, every spell with a range can be casted throught this canon and be shot indirectly.</li>
+                <li><strong>Blast Plating.</strong>you gain resistance against force and bludgeoning damage.</li>
+            </ul></td>
+        </tr>
+         <tr>
+            <td>Excavator</td>
+            <td><ul>
+                <li><strong>Integrated Drills.</strong>As an action you gain 20ft digging speed until the end of your turn. You can hold your breath for an hour.</li>
+                <li><strong>Reinforced Crusher.</strong>You gain a melee weapon that deals 1d10 piercing damage and on a succesfull hit lowers the AC of the enemy by 1 up to 3.</li>
+            </ul></td>
+        </tr>
+        <tr>
+            <td>Ligthing</td>
+            <td><ul>
+                <li><strong>Tesla Coils.</strong>The armor gain a simple eanged weapon with 1d6 lighting damage. When you hit with this weapon you can choose one enemy within 15ft of your target and make a ranged atack with this weapon dealing 1d4 lighting damage. Both targets lose 10ft movement speed on hit. The armour also gains two simple melee weapons with 1d6 lighting damage .</li>
+                <li><strong>Exposed Wiring.</strong>Any creature that hits you from 10ft or Less suffers 1 + your int modifier lighting damage on hit and as a reaction you can increase this dmg to 1d8+int modifier; On a failed constitution saving throw move the enemy 15ft in a straight line from you.</li>
+                <li><strong>Current Protection Systems.</strong>You cant be moved against your will or be knocked prone.</li>
+            </ul></td>
+        </tr>
+        </table>
+                <h2>Alchemical Savant</h2>
+        <p>At 5th level, you've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).</p>
+
+        <h2>Restorative Reagents</h2>
+        <p>Starting at 9th level, you can incorporate restorative reagents into some of your works:</p>
+        <ul>
+            <li>Whenever a creature drinks an experimental elixir you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).</li>
+            <li>You can cast Lesser Restoration without expending a spell slot and without preparing the spell, provided you use alchemist's supplies as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</li>
+        </ul>
+
+        <h2>Chemical Mastery</h2>
+        <p>By 15th level, you have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:</p>
+        <ul>
+            <li>You gain resistance to acid damage and poison damage, and you are now immune to the poisoned condition.</li>
+            <li>You can cast Greater Restoration and Heal without expending a spell slot, without preparing the spell, and without providing the material component, provided you use alchemist's supplies as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest.</li>
+        </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidenav() {
+            const sidenav = document.getElementById('mySidenav');
+            sidenav.classList.toggle('active');
+        }
+
+        // Close sidenav when clicking outside
+        document.addEventListener('click', function(event) {
+            const sidenav = document.getElementById('mySidenav');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (!sidenav.contains(event.target) && !menuToggle.contains(event.target)) {
+                sidenav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

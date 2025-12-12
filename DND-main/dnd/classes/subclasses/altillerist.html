@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Artillerist - D&D</title>
+</head>
+<body>
+    <!-- Menu Toggle Button -->
+    <button class="menu-toggle" onclick="toggleSidenav()">☰ Menu</button>
+
+    <!-- Side Navigation -->
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidenav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../artificer.html">Artificer</a>
+        <a href="#">Subclasses</a>
+        <a href="#">Spells</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <h1>Artificer: Artillerist</h1>
+
+            <p><strong>An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield. This destructive power is valued by armies in the wars on many different worlds. And when war passes, some members of this specialization seek to build a more peaceful world by using their powers to fight the resurgence of strife. The world-hopping gnome artificer Vi has been especially vocal about making things right: "It's about time we fixed things instead of blowing them all to hell.".</strong></p>
+
+            <p><strong>Source:</strong> Tasha's Cauldron of Everything/Eberron: Rising from the Last War/Jacob's Ball of Stuff</p>
+
+            <h2>Tool Proficiency</h2>
+            <p>When you adopt this specialization at 3rd level, you gain proficiency with woodcarver's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.</p>
+
+            <h2>Artillerist Spells</h2>
+            <p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Artillerist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+            <table>
+    <thead>
+        <tr>
+            <th>Artificer Level</th>
+            <th>Artillerist Spells</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3rd</td>
+            <td><a href="../../spells/all-spells/1st/shield.html">Shield</a>, <a href="../../spells/all-spells/1st/thunderwave.html">Thunderwave</a></td>
+        </tr>
+        <tr>
+            <td>5th</td>
+            <td><a href="../../spells/all-spells/2nd/scorching-ray.html">Scorching Ray</a>, <a href="../../spells/all-spells/2nd/shatter.html">Shatter</a></td>
+        </tr>
+        <tr>
+            <td>9th</td>
+            <td><a href="../../spells/all-spells/3rd/fireball.html">Fireball</a>, <a href="../../spells/all-spells/3rd/wind-wall.html">Wind Wall</a></td>
+        </tr>
+        <tr>
+            <td>13th</td>
+            <td><a href="../../spells/all-spells/4th/ice-storm.html">Ice Storm</a>, <a href="../../spells/all-spells/4th/wall-of-fire.html">Wall of Fire</a></td>
+        </tr>
+        <tr>
+            <td>17th</td>
+            <td><a href="../../spells/all-spells/5th/cone-of-cold.html">Cone of Cold</a>, <a href="../../spells/all-spells/5th/wall-of-force.html">Wall of Force</a></td>
+        </tr>
+    </tbody>
+</table>
+        <h2>Eldritch Cannon</h2>
+        <p>Also at 3rd level, you've learned how to create a magical cannon. Using woodcarver's tools or smith's tools, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand. Once you create a cannon, you can't do so again until you finish a long rest or until you expend a spell slot to create one. You can have only one cannon at a time and can't create one while your cannon is present. <br><br>
+
+The cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage and psychic damage. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the mending spell is cast on it, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action. <br><br>
+
+When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.</p>
+        <table>
+    <thead>
+        <tr>
+            <th>Cannon</th>
+            <th>Activation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Flamethrower</td>
+            <td>The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 fire damage on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried.</td>
+        </tr>
+        <tr>
+            <td>Force Ballista</td>
+            <td>Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature, it is pushed up to 5 feet away from the cannon.</td>
+        </tr>
+        <tr>
+            <td>Protector</td>
+            <td>The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it a number of temporary hit points equal to 1d8 + your Intelligence modifier (minimum of +1).</td>
+        </tr>
+        <tr>
+            <td>Railgun</td>
+            <td>In a range of 120 feet choose one creature the turret has a direct line of sight with and make a spell attack. If it hits the creature it deals 1d8 radiant damage, and pierces it. Every creature in a 300 feet line behind the hit creature is also hit by the beam, and increases its damage to all of them by 1d8, up to a max of 4d8. All creatures pierced have to roll a dexterity saving throw, and if suceeded the damage is halved (The damage doesnt increase at level 9. Instead, max damage increases to 8d8). </td>
+        </tr>
+        <tr>
+            <td>Tesla coil</td>
+            <td>In range of 60 feet you can arc a lightning strike. The creature you attack has to roll a constitution saving throw. If it fails lighting arcs to any creature in 5ft range. If it passes only the targeted creature gets shocked. All creatures hit by lightning take 1d8 lightning damage. The secondary targets cant arc lightning.</td>
+        </tr>
+        <tr>
+            <td>Earth shatterer</td>
+            <td>The earth shatterer emits a rumble in range of 10 feet. All creatures in range roll a dexterity save. If they fail they recive 1d6 thunder damage, and fall prone. if they suceed they recive half that damage and dont fall prone. (2d6 at 9th level). </td>
+        </tr>
+        <tr>
+            <td>The goader</td>
+            <td>The goader goads enemies into attacking it. When activated, in the user chooses one enemy in range of 10 feet. The enemy has to roll a wisdom save against spell save dc of the artificer. If suceeded nothing happens. If failed, the enemy has to try to attack the goader. All enemies that hit the goader take 2d8 damage.</td>
+        </tr>
+        </table>
+
+                <h2>Arcane Firearm</h2>
+        <p>At 5th level, You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver's tools to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.<br><br>
+
+You can use your arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell's damage rolls equal to the number rolled.</p>
+
+        <h2>Explosive Cannon</h2>
+        <p>Starting at 9th level, every eldritch cannon you create is more destructive:</p>
+        <ul>
+            <li>The cannon's damage rolls all increase by 1d8.</li>
+            <li>As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking 3d8 force damage on a failed save or half as much damage on a successful one.</li>
+        </ul>
+
+        <h2>Fortified Position</h2>
+        <p>By 15th level, you’re a master at forming well-defended emplacements using Eldritch Cannon:</p>
+        <ul>
+            <li>You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.</li>
+            <li>You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine whether the cannons are identical to each other or different. You can't create a third cannon while you have two.
+</li>
+        </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidenav() {
+            const sidenav = document.getElementById('mySidenav');
+            sidenav.classList.toggle('active');
+        }
+
+        // Close sidenav when clicking outside
+        document.addEventListener('click', function(event) {
+            const sidenav = document.getElementById('mySidenav');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (!sidenav.contains(event.target) && !menuToggle.contains(event.target)) {
+                sidenav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
