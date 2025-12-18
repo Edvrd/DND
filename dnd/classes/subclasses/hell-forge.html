@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Hell Forge</title>
+</head>
+<body>
+    <!-- Side Navigation -->
+     <button class="menu-toggle" onclick="toggleSidenav()">☰ Menu</button>
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidenav()">&times;</a>
+        <a href="../../index.html">Home</a>
+        <a href="../warlock.html">Warlock</a>
+        <a href="#">Subclasses</a>
+        <a href="#">Spells</a>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Hell Forge</h1>
+
+<h3>Expanded Spell List</h3>
+<p>The Hell Forge lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Spell Level</th>
+            <th>Spells</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1st</td>
+            <td><a href="../../spells/all-spells/1st/burning-hands.html">Burning Hands</a>, <a href="../../spells/all-spells/1st/guiding-bolt.html">Guiding Bolt</a></td>
+        </tr>
+        <tr>
+            <td>2nd</td>
+            <td><a href="../../spells/all-spells/2nd/scorching-ray.html">Scorching Ray</a>, <a href="../../spells/all-spells/3rd/flame-blade.html">Flame Blade</a></td>
+        </tr>
+        <tr>
+            <td>3rd</td>
+            <td><a href="../../spells/all-spells/3rd/fireball.html">Fireball</a>, <a href="../../spells/all-spells/3rd/slow.html">Slow</a></td>
+        </tr>
+        <tr>
+            <td>4th</td>
+            <td><a href="../../spells/all-spells/4th/fire-shield.html">Fire Shield</a>, <a href="../../spells/all-spells/4th/wall-of-fire.html">Wall of Fire</a></td>
+        </tr>
+        <tr>
+            <td>5th</td>
+            <td><a href="../../spells/all-spells/5th/flame-strike.html">Flame Strike</a>, <a href="../../spells/all-spells/3rd/holy-weapon.html">Święta Broń</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Totem of Devotion</h3>
+<p>Starting at 1st level you can as an action summon a beacon from your patron to help you in your quest. The beacon Takes 5x5ft space and Has 10xyour warlock lvl HP with ac 15. 
+The beacon arrives by a portal in the sky but if you are under a roof the portal will apear as hight as It can.
+You can choose the type of your beacon from the list under</p>
+
+<h3>Entropic Ward</h3>
+<p>At 6th level, you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.</p>
+<p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+
+<h3>Thought Shield</h3>
+<p>Starting at 10th level, your thoughts can't be read by telepathy or other means unless you allow it. You also have resistance to psychic damage, and whenever a creature deals psychic damage to you, that creature takes the same amount of damage that you do.</p>
+
+<h3>Create Thrall</h3>
+<p>At 14th level, you gain the ability to infect a humanoid's mind with the alien magic of your patron. You can use your action to touch an incapacitated humanoid. That creature is then charmed by you until a <em>Remove Curse</em> spell is cast on it, the charmed condition is removed from it, or you use this feature again.</p>
+<p>You can communicate telepathically with the charmed creature as long as the two of you are on the same plane of existence.</p>
+        </div>
+    </div>
+<script>
+        function toggleSidenav() {
+            const sidenav = document.getElementById('mySidenav');
+            sidenav.classList.toggle('active');
+        }
+
+        // Close sidenav when clicking outside
+        document.addEventListener('click', function(event) {
+            const sidenav = document.getElementById('mySidenav');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (!sidenav.contains(event.target) && !menuToggle.contains(event.target)) {
+                sidenav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
