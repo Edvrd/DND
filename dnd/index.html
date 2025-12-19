@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Arcane Archives | 5e Wiki</title>
+    <link rel="stylesheet" href="./css/styles.css"> 
+    
+    <style>
+        .wiki-hub-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .wiki-hub-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="menu-toggle" onclick="toggleNav()">
+        ☰ Menu
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+        <a href="./classes/index.html">Classes</a>
+        <a href="#subclasses">Subclasses</a>
+        <a href="#spells">Spells</a>
+        <a href="#items">Items</a>
+        <a href="#backgrounds">Backgrounds</a>
+        <a href="#lineages">Lineages</a>
+    </div>
+
+    <div id="main" class="main-content">
+        <div class="container">
+            
+            <h1>The Arcane Archives</h1>
+            
+            <p>Welcome to the definitive System Reference Wiki for the 5th Edition (2014) ruleset. This repository focuses strictly on mechanical data, organizing the fundamental building blocks of the game into an easily searchable format.</p>
+
+            
+
+            <div class="wiki-hub-grid">
+                
+                <div>
+                    <h2>Character Construction</h2>
+                    <p>The core components required to build a character, stripped of setting-specific fluff.</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr >
+                                <td><a href="./classes/index.html">Classes</a></td>
+                                <td>The primary definition of what your character can do. Includes 12 base classes.</td>
+                            </tr>
+                            <tr onclick="window.location='#lineages'" style="cursor: pointer;">
+                                <td>Lineages</td>
+                                <td>Racial traits, ancestry mechanics, and physiological statistics.</td>
+                            </tr>
+                            <tr onclick="window.location='#backgrounds'" style="cursor: pointer;">
+                                <td>Backgrounds</td>
+                                <td>Origin stories that provide skill proficiencies and starting equipment.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h2>Magic & Equipment</h2>
+                    <p>Compendiums of physical goods and magical effects.</p>
+                    
+                    
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <a href="./spells/index.html"><tr style="cursor: pointer;"></a>
+                                <td>Spells</td>
+                                <td>A complete index of spells from Cantrips to 9th Level, sortable by school.</td>
+                            </tr>
+                            <a href="#"><tr style="cursor: pointer;"></a>
+                                <td>Items</td>
+                                <td>Adventuring gear, weapons, armor, and magical artifacts.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <hr style="border: 0; height: 1px; background: #d4af37; margin: 40px 0;">
+
+            <h3>Recent Updates</h3>
+            <p><strong>Database Optimization:</strong> Improved search latency for Spell filtering.</p>
+            <p><strong>Errata Applied:</strong> Fixed text discrepancies in the <em>Paladin</em> class progression table.</p>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var sidenav = document.getElementById("mySidenav");
+            var main = document.getElementById("main");
+            
+            if (sidenav.classList.contains('active')) {
+                sidenav.classList.remove('active');
+                main.style.marginLeft = "0";
+            } else {
+                sidenav.classList.add('active');
+                // If screen is large, push content. If small, overlay (optional logic)
+                if(window.innerWidth > 768) {
+                    main.style.marginLeft = "250px";
+                }
+            }
+        }
+    </script>
+
 </body>
 </html>

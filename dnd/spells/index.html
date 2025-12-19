@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spells Index | The Arcane Archives</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <div class="menu-toggle" onclick="toggleNav()">
+        ☰ Menu
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="class-index.html">Classes</a>
+        <a href="#">Subclasses</a>
+        <a href="spells-index.html" style="color: #f0d562; background-color: rgba(139, 115, 85, 0.1);">Spells</a>
+        <a href="#">Items</a>
+        <a href="#">Backgrounds</a>
+        <a href="#">Lineages</a>
+    </div>
+
+    <div id="main" class="main-content">
+        <div class="container">
+            
+            <h1>Arcane & Divine Spells Index</h1>
+            
+            <p>Ta sekcja służy jako katalog do przeszukiwania zaklęć. Możesz przeglądać czary na podstawie ich **Szkoły Magii** (kategorii efektu) lub **Klasy** (kto może je rzucać).</p>
+
+            <h2>Przegląd Według Szkoły Magii</h2>
+            <p>Lista zaklęć pogrupowana według ich magicznej dyscypliny, odwołująca się do oddzielnych plików HTML dla każdej szkoły.</p>
+
+            
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 50%;">Szkoła Magii</th>
+                        <th style="width: 50%;">Opis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><a href="schools/abjuration.html">Abjuration</a></td><td>Zaklęcia ochronne, które mają za zadanie zapobiegać szkodom, niszczyć magię lub tworzyć bariery.</td></tr>
+                    <tr><td><a href="schools/conjuration.html">Conjuration</a></td><td>Magia transportu, przywoływania przedmiotów lub stworzeń i teleportacji.</td></tr>
+                    <tr><td><a href="schools/divination.html">Divination</a></td><td>Ujawnianie informacji, przepowiadanie przyszłości i dostrzeganie ukrytych rzeczy.</td></tr>
+                    <tr><td><a href="schools/enchantment.html">Enchantment</a></td><td>Magia wpływająca na umysły innych, często kontrolująca lub uspokajająca.</td></tr>
+                    <tr><td><a href="schools/evocation.html">Evocation</a></td><td>Magia, która manipuluje energią, tworząc efekty takie jak ogień, lód, błyskawice lub leczenie.</td></tr>
+                    <tr><td><a href="schools/illusion.html">Illusion</a></td><td>Tworzenie fantomowych obrazów, fałszywych dźwięków lub wpływanie na zmysły celu.</td></tr>
+                    <tr><td><a href="schools/necromancy.html">Necromancy</a></td><td>Magia manipulująca energią życiową, często związana z tworzeniem nieumarłych lub wysysaniem życia.</td></tr>
+                    <tr><td><a href="schools/transmutation.html">Transmutation</a></td><td>Zaklęcia, które zmieniają właściwości stworzenia lub obiektu.</td></tr>
+                </tbody>
+            </table>
+
+            <h2>Przegląd Według Klasy</h2>
+            <p>Lista zaklęć dostępnych dla poszczególnych klas, uporządkowana według ich listy zaklęć. Każda klasa ma oddzielny plik indeksowy z listą czarów.</p>
+
+            <ul style="max-width: 900px;">
+                <li><a href="class-spells/bard-spells.html">Bard Spells</a></li>
+                <li><a href="class-spells/cleric-spells.html">Cleric Spells</a></li>
+                <li><a href="class-spells/druid-spells.html">Druid Spells</a></li>
+                <li><a href="class-spells/paladin-spells.html">Paladin Spells</a></li>
+                <li><a href="class-spells/ranger-spells.html">Ranger Spells</a></li>
+                <li><a href="class-spells/sorcerer-spells.html">Sorcerer Spells</a></li>
+                <li><a href="class-spells/warlock-spells.html">Warlock Spells</a></li>
+                <li><a href="class-spells/wizard-spells.html">Wizard Spells</a></li>
+                <li><a href="class-spells/all-cantrips.html">All Cantrips (Level 0)</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var sidenav = document.getElementById("mySidenav");
+            var main = document.getElementById("main");
+            
+            if (sidenav.classList.contains('active')) {
+                sidenav.classList.remove('active');
+                main.style.marginLeft = "0";
+            } else {
+                sidenav.classList.add('active');
+                if(window.innerWidth > 768) {
+                    main.style.marginLeft = "250px";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
